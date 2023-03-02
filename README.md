@@ -1,7 +1,7 @@
 # Snapshot-and-State-Sync-Nolus-Protocol
 ## Snapshot and State Sync Nolus Protocol
 
-By using snapshots it syncs faster than usual
+By using snapshots it syncs faster than usual,
 Please select prefer to use snapshot or state sync
 
 # Instructions
