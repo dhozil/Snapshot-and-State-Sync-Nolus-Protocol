@@ -3,15 +3,15 @@
 By using snapshots it syncs faster than usual
 Please select prefer to use snapshot or state sync
 
-#Instructions
+# Instructions
 
-##install dependencies, if needed
+## install dependencies, if needed
 ```
 sudo apt update
 sudo apt install lz4 -y
 ```
 
-##Download Snapshot and Restart service
+## Download Snapshot and Restart service
 ```
 sudo systemctl stop nolusd
 
@@ -26,7 +26,7 @@ sudo systemctl start nolusd
 sudo journalctl -u nolusd -f --no-hostname -o cat
 ```
 
-#State Sync
+# State Sync
 ```
 sudo systemctl stop nolusd
 
@@ -56,4 +56,4 @@ curl -s https://snapshots1-testnet.nodejumper.io/nolus-testnet/wasm.lz4 | lz4 -d
 sudo systemctl restart nolusd
 sudo journalctl -u nolusd -f --no-hostname -o cat
 ```
-##Thank you for visiting
+## Thank you for visiting
