@@ -19,7 +19,7 @@ sudo systemctl stop nolusd
 cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup 
 
 nolusd tendermint unsafe-reset-all --home $HOME/.nolus --keep-addr-book 
-curl https://snapshots1-testnet.nodejumper.io/nolus-testnet/nolus-rila_2023-03-01.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nolus
+curl https://bit.ly/snapshot-dhozil-nolus | lz4 -dc - | tar -xf - -C $HOME/.nolus
 
 mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json 
 
@@ -52,9 +52,9 @@ sed -i 's|^trust_hash *=.*|trust_hash = "'$TRUST_HASH'"|' $HOME/.nolus/config/co
 
 mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
 
-curl -s https://snapshots1-testnet.nodejumper.io/nolus-testnet/wasm.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nolus
+curl -s https://bit.ly/statesync-dhozil-nolus | lz4 -dc - | tar -xf - -C $HOME/.nolus
 
 sudo systemctl restart nolusd
 sudo journalctl -u nolusd -f --no-hostname -o cat
 ```
-## Thank you for visiting
+## From DhoziL Crew3 Nolus, Thanks
