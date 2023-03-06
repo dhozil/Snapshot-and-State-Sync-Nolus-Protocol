@@ -34,7 +34,7 @@ sudo systemctl stop nolusd
 cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup
 nolusd tendermint unsafe-reset-all --home $HOME/.nolus --keep-addr-book
 
-SNAP_RPC="https://nolus-testnet.nodejumper.io:443"
+SNAP_RPC="https://bit.ly/nolus-tesnet-dhozil"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height)
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000))
